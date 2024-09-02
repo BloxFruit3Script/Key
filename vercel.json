@@ -1,15 +1,15 @@
 {
   "functions": {
-    "api/dad.py": {
+    "dad.py": {
       "runtime": "vercel-python@0.5.1"
     },
-    "api/mom.py": {
+    "mom.py": {
       "runtime": "vercel-python@0.5.1"
     },
-    "api/trip.py": {
+    "trip.py": {
       "runtime": "vercel-python@0.5.1"
     },
-    "api/idk.py": {
+    "idk.py": {
       "runtime": "vercel-python@0.5.1"
     }
   }
