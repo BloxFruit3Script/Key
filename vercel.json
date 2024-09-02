@@ -1,16 +1,22 @@
 {
-  "functions": {
-    "dad.py": {
-      "runtime": "vercel-python@0.5.1"
-    },
-    "mom.py": {
-      "runtime": "vercel-python@0.5.1"
-    },
-    "trip.py": {
-      "runtime": "vercel-python@0.5.1"
-    },
-    "idk.py": {
-      "runtime": "vercel-python@0.5.1"
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/fluxus",
+      "dest": "idk.py"
+    },
+    {
+      "src": "/api/paste",
+      "dest": "trip.py"
+    }
+  ]
 }
